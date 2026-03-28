@@ -44,17 +44,17 @@ frontend/
 
 ### Frontend Apps
 
-1. **Main App Frontend** (`http://app.myplatform.local:3000`)
+1. **Main App Frontend** (`http://app.myplatform.local:3001`)
 - Landing page, register form, login form.
 - Authenticated home page with navigation links to Dashboard and Store.
 - Global logout action.
 
-2. **Dashboard Frontend** (`http://dashboard.myplatform.local:3001`)
+2. **Dashboard Frontend** (`http://dashboard.myplatform.local:3002`)
 - Protected app.
 - Internal routes: `overview`, `settings`.
 - Shows welcome text with logged-in user name + mock summary cards/activity.
 
-3. **Store Frontend** (`http://store.myplatform.local:3002`)
+3. **Store Frontend** (`http://store.myplatform.local:3003`)
 - Protected app.
 - Internal routes: product list, product detail, cart.
 - Includes add-to-cart / remove-from-cart flow.
@@ -164,13 +164,6 @@ Open in browser:
 - Dashboard Service: `http://dashboard.myplatform.local:5001/api-docs`
 - Store Service: `http://store.myplatform.local:5002/api-docs`
 
-## Demo Flow (for 2-3 min recording)
-
-1. Open `app.myplatform.local:3000`, register and login.
-2. Open dashboard from main app; user is already authenticated.
-3. Navigate from dashboard to store; still authenticated.
-4. Logout from any app (main/dashboard/store); all apps require login again.
-5. Show invalid session behavior (delete session in DB or wait TTL) and confirm redirect to login.
 
 ## What I Would Improve with More Time
 
